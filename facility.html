@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blind And Shutter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header" style="background-color:#ff6666;">
+				<div id="head">
+					<h1>Blinds & Shutter</h1>
+					<span style="color: #fff;">Welcome to our website</span>
+					<hr>
+				</div>
+				
+			</div><!-- header ends-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3" style="min-height: 575px;">
+						<ul id="sidebar-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="booking.html">Booking</a></li>
+							<li><a href="register-user.html">Register Users</a></li>
+							<li><a href="location.html">Add Location</a></li>
+							<li style="background-color: #4CAF50;"><a href="">View Facilities</a></li>
+							<li><a href="login.html">Login Here</a></li>
+						</ul>
+					</div><!-- sidebar ends-->
+					<div class="col-sm-9" style="border-bottom: 2px solid #fff; ">
+						<div id="hero-section">
+							<div id="details">
+								<div class="conatiner-fluid" style="color: #fff;">
+									<div class="row" >
+										<div class="col-sm-4" style="border: 1px solid white;">
+										<h3>Swimming Pool</h3>
+											<img src="img/f1.jpg" class="img img-thumbnail">
+											<p>
+											  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+											</p>
+											<button class="btn btn-sm btn-info" data-toggle="modal" data-target="#Modal" onclick="modal1()">View facility <i class="fa fa-eye"></i></button>
+										</div>
+										<div class="col-sm-4" style="border: 1px solid white;">
+										<h3>Conference Room</h3>
+											<img src="img/f2.jpg" class="img img-thumbnail">
+											<p>
+											 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+											</p>
+											<button class="btn btn-sm btn-info" data-toggle="modal" data-target="#Modal" onclick="modal2()">View facility <i class="fa fa-eye"></i></button>
+										</div>
+										<div class="col-sm-4" style="border: 1px solid white;">
+										<h3>Bed Room</h3>
+											<img src="img/f5.jpg" class="img img-thumbnail">
+											<p>
+											  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+											</p>
+											<button class="btn btn-sm btn-info" data-toggle="modal" data-target="#Modal" onclick="modal3()">View facility <i class="fa fa-eye"></i></button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+					</div><!-- main-content-->
+					<footer >
+						<div id="iconsfooter">
+							<h2>Get In Touch!</h2>
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-whatsapp"></i>
+							<i class="fa fa-youtube"></i>
+							<i class="fa fa-instagram"></i>
+							<i class="fa fa-linkedin"></i>
+							
+						</div>
+						<div style="color: white;">
+							<h4 class="text-center">Call us On:<i class="fa fa-phone"></i> 07058888888</h4>
+					
+							<h4 class="text-center">Email Us On:<i class="fa fa-envelope"></i>  blindshutters@gmail.com</h4>
+							
+						</div>
+					</footer>
+				</div>
+
+			</div>
+		</div>
+
+	<div class="container-fluid">
+	  <!-- Modal -->
+	<div class="modal fade" id="Modal" role="dialog">
+	    <div class="modal-dialog" style="width: 50%;">
+	      <div class="modal-content">
+	        <div class="modal-header" >
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h3 id="modal-title"></h3>
+	        </div>
+	        <div class="modal-body" style="padding:40px 50px;">
+	          <div>
+					<img id="modal-img" src="" class="img img-thumbnail">
+					<h4>Facility Details</h4>
+					<p id="modal-text">
+					   
+					</p>
+				</div>
+	        </div>
+	        <div class="modal-footer">
+	          <button id="login-btn" type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="fa fa-remove"></span> Close</button>
+	        </div>
+	      </div>
+	      <script>
+			function modal1() {
+
+			  document.getElementById("modal-img").src = "img/f1.jpg";
+			  document.getElementById("modal-title").innerHTML ="Cool Swimming Pool";
+			  document.getElementById("modal-text").innerHTML ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.";
+			}
+			function modal2() {
+			  document.getElementById("modal-img").src = "img/f2.jpg";
+			  document.getElementById("modal-title").innerHTML ="Cool Conference Rooms";
+			  document.getElementById("modal-text").innerHTML ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.";
+			}
+			function modal3() {
+			  document.getElementById("modal-img").src = "img/f5.jpg";
+			   document.getElementById("modal-title").innerHTML ="Warm Bed Rooms";
+			   document.getElementById("modal-text").innerHTML ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.";
+			}
+			</script>
+	     
+	     <!--  <script>
+	      	document.getElementById("login-btn").addEventListener("click", login);
+			function login() {
+			    alert ("You logged in Successfyl!");
+			    window.open('booking.html','_self');
+			}
+	      </script> -->
+	    </div>
+	  </div> 
+
+	</div>
+</div><!-- main wrapper ends-->
+	<script src="js/jquery2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="javaScript.js"></script>
+
+</body>
+</html>

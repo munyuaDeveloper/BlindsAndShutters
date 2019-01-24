@@ -1,0 +1,154 @@
+h1, h2, h3, h4, h5{
+	font-size: 22px;
+	color:#fff;
+}
+p,span{
+	font-size: 22px;
+	color:#fff;
+}
+#Modal h3{
+	color: black;
+}
+#Modal p{
+	color: black;
+}
+#Modal h4{
+	color: black;
+	text-decoration: underline;
+}
+.btn-info{
+	margin-bottom: 8px;
+	padding: 5px;
+}
+.header{
+	width: 100%;
+	display: table;
+	text-align: center; 
+	background-color: #e60000 !important;
+}
+#head{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.col-sm-3{
+	background-color: #808B96;
+	min-height: 550px;
+	font-size: 25px;
+}
+#sidebar-menu{
+	margin-top: 100px;
+}
+#sidebar-menu li{
+    font-size: 28px;
+    text-decoration: none;
+    display: block;
+    padding: 12px 10px 10px 20px;
+}
+#sidebar-menu li a {
+    color: black;
+    padding: 12px 10px 0 0;
+    text-decoration: none;
+     text-align: right;
+     width: 150px;
+}
+#sidebar-menu li a:hover {
+    color: #fff;
+}
+
+.col-sm-9{
+	min-height: 500px;
+	margin: 0;
+	padding: 0;
+}
+#hero-section{
+	background-color: #34495E;
+	padding: 15px;
+	min-height: 500px;
+	display: table;
+	width: 100%;
+}
+#details{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#map{
+	background-image: url('img/map.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*=============== Footer section=================*/
+
+footer{
+	background-color: #34495E;
+}
+#iconsfooter{
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+#iconsfooter i{
+	border-radius: 100%;
+	padding: 6px;
+}
+.fa-facebook{
+	background-color: #000099;
+}
+.fa-twitter{
+	background-color: #4d4dff;
+}
+.fa-whatsapp{
+	background-color: #00ff00;
+}
+.fa-youtube{
+	background-color: #ff0000;
+}
+.fa-instagram{
+	background-color: #ff3399;
+}
+.fa-linkedin{
+	background-color: #33ccff;
+}
+
+.nav>li>a{
+	color: white;
+}
+.nav>li>a:hover{
+	background-color: #33ff33;
+}
+/*====media queries====*/
+@media screen and (max-width: 1060px){
+	#msg1{
+		font-size: 14px;
+	}
+}
+@media screen and(max-width: 935px){
+	#msg2{
+		font-size: 14px!important;
+	}
+}
+@media screen and(max-width: 768px){
+	.col-sm-3{
+	height: auto;
+	font-size: 15px;
+}
+#sidebar-menu li{
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px 5px 0px;
+}
+#sidebar-menu li a {
+    color: black;
+    padding: 5px 5px 0 0;
+    text-decoration: none;
+     text-align: right;
+}
+}
+@media screen and (max-width: 615px){
+	#sidebar-menu{
+	margin-top: 0!important;
+}
+}

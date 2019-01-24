@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blind And Shutter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="header" style="background-color:#ff6666;">
+			<div id="head">
+				<h1>Blinds & Shutter</h1>
+				<span style="color: #fff;">Welcome to our website</span>
+				<hr>
+			</div>
+			
+		</div><!-- header ends-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<ul id="sidebar-menu">
+						<li class="active"><a href="home.html">Home</a></li>
+						<li><a href="booking.html">Booking</a></li>
+						<li><a href="register-user.html">Register Users</a></li>
+						<li><a href="location.html">Add Location</a></li>
+						<li><a href="facility.html">View Facilities</a></li>
+						<li style="background-color: #4CAF50;"><a href="login.html">Login Here</a></li>
+					</ul>
+				</div><!-- sidebar ends-->
+				<div class="col-sm-9">
+					<div id="hero-section" style="min-height: 550px;">
+						<div id="details">
+							<h1>Welcome to Blind & Shutter</h1>
+							<div class="col-sm-2">
+								
+							</div>
+							<div class="col-sm-8">
+								<h3 class="text-center">Login Here!</h3>
+								<form role="form" method="post">
+					            <div class="form-group">
+					              <input type="text" class="form-control" name="email" id="email" placeholder="Enter email">
+					            </div>
+					            <div class="form-group">
+					              <input type="text" class="form-control" name="password" id="psw" placeholder="Enter password">
+					            </div>
+					              <button id="login-btn" type="submit"  name="Login" class="btn btn-success btn-block"><span class="fa fa-user"></span> Login</button>
+					          </form>
+					          <div>
+						          <p>Not a member? <a href="register-user.html">Sign Up</a></p>
+						          <p>Forgot <a href="#">Password?</a></p>
+						        </div>
+						      </div>
+							</div>
+							<div class="col-sm-2">
+							</div>		
+				        </div>
+				        
+				      <script>
+				      	document.getElementById("login-btn").addEventListener("click", login);
+						function login() {
+							var email = document.getElementById("email").value;
+							var password = document.getElementById("psw").value;
+							if (email==="example@gmail.com" && password===1234) {
+								 alert ("You logged in Successfyl!");
+								// window.open('booking.html','_self');
+							}else{
+								alert ("Please enter the correct details!");
+							}			   
+						}
+				      </script>
+					</div>
+					</div>
+				</div><!-- main-content-->
+			</div>
+		</div>
+		<div class="container">
+	  <!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header" style="padding:35px 50px;">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+	        </div>
+	        <div class="modal-body" style="padding:40px 50px;">
+	          <form role="form" action="" method="post">
+	            <div class="form-group">
+	              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+	              <input type="text" class="form-control" name="email" id="usrname" placeholder="Enter email">
+	            </div>
+	            <div class="form-group">
+	              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+	              <input type="text" class="form-control" name="password" id="psw" placeholder="Enter password">
+	            </div>
+	            <div class="checkbox">
+	              <label><input type="checkbox" value="" checked>Remember me</label>
+	            </div>
+	              <button id="login-btn" type="submit"  name="Login" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+	          </form>
+	        </div>
+	        <div class="modal-footer">
+	          <button id="login-btn" type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+	          <p>Not a member? <a href="register.php">Sign Up</a></p>
+	          <p>Forgot <a href="#">Password?</a></p>
+	        </div>
+	      </div>
+	    </div>
+	  </div> 
+	</div>
+
+	<footer >
+		<div id="iconsfooter">
+			<h2>Get In Touch!</h2>
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-whatsapp"></i>
+			<i class="fa fa-youtube"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			
+		</div>
+		<div style="color: white;">
+			<h4 class="text-center">Call us On:<i class="fa fa-phone"></i> 07058888888</h4>
+
+			<h4 class="text-center">Email Us On:<i class="fa fa-envelope"></i>  blindshutters@gmail.com</h4>
+			
+		</div>
+	</footer>
+</div><!-- main wrapper ends-->
+	<script src="js/jquery2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="javaScript.js"></script>
+
+</body>
+</html>
